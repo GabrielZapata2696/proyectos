@@ -1,0 +1,26 @@
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <div class="sidenav-content">
+      <mat-list role="list">
+        <p class="text-center h4">Filtros</p>
+        <hr />
+        <mat-list-item role="listitem" *ngFor="let item of sideNavItems">
+          <div class="nav-button text-left">
+            <button
+              mat-raised-button
+              [routerLink]="[item.url]"
+              routerLinkActive="active"
+            >
+              <span> {{ item.nombre }}</span>
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                [fontIcon]="item.icon"
+              ></mat-icon>
+            </button>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>
