@@ -6,5 +6,6 @@
 </mat-toolbar>
 
 <div>
-  <shared-sidebar #sidenav> </shared-sidebar>
+  <shared-sidebar (onCambioTema)="onCambioTema.emit($event)" #sidenav>
+  </shared-sidebar>
 </div>

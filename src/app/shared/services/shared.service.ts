@@ -6,6 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class SharedService {
 
+  public cambiarTema: boolean = false;
 
   private toggle: BehaviorSubject<boolean>;
 

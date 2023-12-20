@@ -20,6 +20,21 @@
             </button>
           </div>
         </mat-list-item>
+        <mat-list-item role="listitem">
+          <div class="nav-button text-left">
+            <button
+              mat-raised-button
+              routerLinkActive="active"
+              (click)="cambiarTema()"
+            >
+              <span> Cambiar tema</span>
+              <mat-icon
+                aria-hidden="false"
+                fontIcon="brightness_medium"
+              ></mat-icon>
+            </button>
+          </div>
+        </mat-list-item>
       </mat-list>
     </div>
   </mat-drawer>
